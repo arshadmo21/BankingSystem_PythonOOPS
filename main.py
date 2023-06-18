@@ -22,18 +22,18 @@ class Bank(User):
     def deposit(self, amount):
         self.amount = amount
         self.balance = self.balance + self.amount
-        print("Account balance has been updated: £", self.balance)
+        print("Account balance has been updated: ₹", self.balance)
 
     def withdraw(self, amount):
         self.amount = amount
         if self.amount > self.balance:
-            print("Insufficient Funds | Balance Available: £", self.balance)
+            print("Insufficient Funds | Balance Available: ₹", self.balance)
         else:
             self.balance = self.balance - self.amount
-            print("Account balance has been updated: £", self.balance)
+            print("Account balance has been updated: ₹", self.balance)
 
     def view_balance(self):
-        print("Account balance: £", self.balance)
+        print("Account balance: ₹", self.balance)
 
 def main():
     name = input("Enter your name: ")
